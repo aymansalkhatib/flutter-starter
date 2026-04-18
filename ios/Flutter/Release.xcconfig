@@ -1,0 +1,35 @@
+#include "Generated.xcconfig"
+
+// --- iOS release size / speed optimizations ---
+
+// Swift: optimize for size (-Osize) instead of speed (-O).
+SWIFT_OPTIMIZATION_LEVEL = -Osize
+SWIFT_COMPILATION_MODE = wholemodule
+
+// Clang / C / C++: optimize for size (-Oz).
+GCC_OPTIMIZATION_LEVEL = s
+LLVM_LTO = YES_THIN
+
+// Strip symbols from the final binary (release only).
+DEPLOYMENT_POSTPROCESSING = YES
+STRIP_INSTALLED_PRODUCT = YES
+STRIP_STYLE = all
+COPY_PHASE_STRIP = YES
+SEPARATE_STRIP = YES
+
+// Strip Swift symbols.
+STRIP_SWIFT_SYMBOLS = YES
+
+// Dead-code stripping.
+DEAD_CODE_STRIPPING = YES
+
+// Enable bitcode is deprecated — keep off.
+ENABLE_BITCODE = NO
+
+// Compress PNG / asset catalog outputs.
+ASSETCATALOG_COMPILER_OPTIMIZATION = space
+COMPRESS_PNG_FILES = YES
+STRIP_PNG_TEXT = YES
+
+// Validate app to catch dead resources at build time.
+VALIDATE_PRODUCT = YES

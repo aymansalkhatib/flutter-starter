@@ -1,0 +1,418 @@
+{
+  "1": {
+    "ar": "انتهت مهلة الاتصال بالخادم.",
+    "en": "Connection timeout with Api Server."
+  },
+  "2": {
+    "ar": "انتهت مهلة الإرسال إلى الخادم.",
+    "en": "Send timeout to Api Server."
+  },
+  "3": {
+    "ar": "انتهت مهلة الاستلام من الخادم.",
+    "en": "Receive timeout from Api Server."
+  },
+  "4": {
+    "ar": "تم إلغاء الطلب إلى الخادم.",
+    "en": "Request to Api Server was canceled."
+  },
+  "5": {
+    "ar": "لا يوجد اتصال بالإنترنت.",
+    "en": "No internet connection."
+  },
+  "6": {
+    "ar": "خطأ غير متوقع، يرجى المحاولة مرة أخرى!.",
+    "en": "Unexpected error, please try again!."
+  },
+  "7": {
+    "ar": "خطأ في الخادم الداخلي، يرجى المحاولة لاحقًا.",
+    "en": "Internal server error, please try later."
+  },
+  "8": {
+    "ar": "عذرًا، حدث خطأ. يرجى المحاولة مرة أخرى.",
+    "en": "Oops, there was an error. Please try again."
+  },
+  "9": {
+    "ar": "طلب غير صحيح.",
+    "en": "Bad request."
+  },
+  "10": {
+    "ar": "لا يمكن الاتصال بالخادم. يرجى التحقق من اتصال الإنترنت أو المحاولة مرة أخرى لاحقًا.",
+    "en": "Failed to connect to the server. Please check your internet connection or try again later."
+  },
+  "11": {
+    "ar": "الشهادة الخادمية غير صالحة. يرجى التحقق من إعدادات الأمان الشبكية.",
+    "en": "The server certificate is invalid. Please check your network security settings."
+  },
+  "12": {
+    "ar": "خطأ غير معروف",
+    "en": "Unknown error"
+  },
+  "13": {
+    "ar": "لم يتم العثور على الصفحة",
+    "en": "Page Not Found."
+  },
+  "14": {
+    "ar": "اضغط على زر الرجوع مرتين بسرعة للخروج من التطبيق",
+    "en": "Press back twice quickly to exit the app"
+  },
+  "15": {
+    "ar": "هذا الحقل مطلوب",
+    "en": "This field is required"
+  },
+  "16": {
+    "ar": "يرجى إدخال بريد إلكتروني صحيح",
+    "en": "Please enter a valid email address"
+  },
+  "17": {
+    "ar": "يجب أن تكون كلمة المرور {{length}} أحرف على الأقل",
+    "en": "Password must be at least {{length}} characters long"
+  },
+  "18": {
+    "ar": "يجب أن تحتوي كلمة المرور على حرف كبير وحرف صغير ورقم وحرف خاص",
+    "en": "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character"
+  },
+  "19": {
+    "ar": "يجب أن تحتوي كلمة المرور على حرف واحد ورقم واحد على الأقل",
+    "en": "Password must contain at least one letter and one number"
+  },
+  "20": {
+    "ar": "يجب أن تحتوي كلمة المرور على حرف خاص واحد على الأقل",
+    "en": "Password must contain at least one special character"
+  },
+  "21": {
+    "ar": "يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل",
+    "en": "Password must contain at least one uppercase letter"
+  },
+  "22": {
+    "ar": "كلمات المرور غير متطابقة",
+    "en": "Passwords do not match"
+  },
+  "23": {
+    "ar": "يرجى إدخال رابط صحيح",
+    "en": "Please enter a valid URL"
+  },
+  "24": {
+    "ar": "يجب أن يبدأ الرابط بـ HTTPS",
+    "en": "URL must use HTTPS protocol"
+  },
+  "25": {
+    "ar": "يجب أن يكون اسم المستخدم بين {{min}} و {{max}} حرفاً",
+    "en": "Username must be between {{min}} and {{max}} characters"
+  },
+  "26": {
+    "ar": "يمكن أن يحتوي اسم المستخدم على أحرف وأرقام وشرطات سفلية فقط",
+    "en": "Username can only contain letters, numbers, and underscores"
+  },
+  "27": {
+    "ar": "يرجى إدخال رقم صحيح",
+    "en": "Please enter a valid integer"
+  },
+  "28": {
+    "ar": "يرجى إدخال رقم صحيح",
+    "en": "Please enter a valid number"
+  },
+  "29": {
+    "ar": "يرجى إدخال رقم موجب",
+    "en": "Please enter a positive number"
+  },
+  "30": {
+    "ar": "يجب أن تكون القيمة أكبر من {{min}}",
+    "en": "Value must be greater than {{min}}"
+  },
+  "31": {
+    "ar": "يجب أن تكون القيمة أقل من {{max}}",
+    "en": "Value must be less than {{max}}"
+  },
+  "32": {
+    "ar": "يرجى إدخال رقم هاتف أمريكي صحيح (مثال: 123-456-7890)",
+    "en": "Please enter a valid US phone number (e.g., 123-456-7890)"
+  },
+  "33": {
+    "ar": "يرجى إدخال رقم هاتف صحيح",
+    "en": "Please enter a valid phone number"
+  },
+  "34": {
+    "ar": "يرجى إدخال رمز بريدي بريطاني صحيح",
+    "en": "Please enter a valid UK postal code"
+  },
+  "35": {
+    "ar": "يرجى إدخال رمز بريدي صحيح",
+    "en": "Please enter a valid postal code"
+  },
+  "36": {
+    "ar": "يرجى إدخال عنوان IPv6 صحيح",
+    "en": "Please enter a valid IPv6 address"
+  },
+  "37": {
+    "ar": "يرجى إدخال عنوان IPv4 صحيح",
+    "en": "Please enter a valid IPv4 address"
+  },
+  "38": {
+    "ar": "يرجى إدخال رمز لون صحيح (مثال: #FF0000)",
+    "en": "Please enter a valid hex color code (e.g., #FF0000)"
+  },
+  "39": {
+    "ar": "يرجى إدخال رقم بطاقة ائتمان صحيح",
+    "en": "Please enter a valid credit card number"
+  },
+  "40": {
+    "ar": "رقم بطاقة {{type}} غير صحيح",
+    "en": "Invalid {{type}} card number"
+  },
+  "41": {
+    "ar": "رقم بطاقة الائتمان غير صحيح",
+    "en": "Invalid credit card number"
+  },
+  "42": {
+    "ar": "يجب أن يكون على الأقل {{length}} حرفاً",
+    "en": "Must be at least {{length}} characters long"
+  },
+  "43": {
+    "ar": "يجب ألا يتجاوز {{length}} حرفاً",
+    "en": "Must not exceed {{length}} characters"
+  },
+  "44": {
+    "ar": "يرجى إدخال تاريخ ووقت ISO 8601 صحيح",
+    "en": "Please enter a valid ISO 8601 datetime"
+  },
+  "45": {
+    "ar": "يرجى إدخال تاريخ ISO 8601 صحيح",
+    "en": "Please enter a valid ISO 8601 date"
+  },
+  "46": {
+    "ar": "يرجى إدخال تاريخ صحيح",
+    "en": "Please enter a valid date"
+  },
+  "47": {
+    "ar": "يجب أن يكون التاريخ بعد {{date}}",
+    "en": "Date must be after {{date}}"
+  },
+  "48": {
+    "ar": "يجب أن يكون التاريخ قبل {{date}}",
+    "en": "Date must be before {{date}}"
+  },
+  "49": {
+    "ar": "يرجى إدخال وقت صحيح بنظام 24 ساعة (مثال: 14:30)",
+    "en": "Please enter a valid 24-hour time (e.g., 14:30)"
+  },
+  "50": {
+    "ar": "يرجى إدخال وقت صحيح بنظام 12 ساعة (مثال: 2:30 PM)",
+    "en": "Please enter a valid 12-hour time (e.g., 2:30 PM)"
+  },
+  "51": {
+    "ar": "يجب ألا يتجاوز حجم الملف {{size}} ميجابايت",
+    "en": "File size must not exceed {{size}} MB"
+  },
+  "52": {
+    "ar": "أنواع الملفات المسموح بها: {{types}}",
+    "en": "Allowed file types: {{types}}"
+  },
+  "53": {
+    "ar": "اسم الملف غير صحيح",
+    "en": "Invalid file name"
+  },
+  "54": {
+    "ar": "يرجى إدخال معرف تويتر صحيح",
+    "en": "Please enter a valid Twitter handle"
+  },
+  "55": {
+    "ar": "يرجى إدخال معرف انستغرام صحيح",
+    "en": "Please enter a valid Instagram handle"
+  },
+  "56": {
+    "ar": "منصة التواصل الاجتماعي غير مدعومة",
+    "en": "Unsupported social media platform"
+  },
+  "57": {
+    "ar": "يجب أن يكون النص بتنسيق camelCase",
+    "en": "Text must be in camelCase format"
+  },
+  "58": {
+    "ar": "يجب أن يكون النص بتنسيق PascalCase",
+    "en": "Text must be in PascalCase format"
+  },
+  "59": {
+    "ar": "يجب أن يكون النص بتنسيق kebab-case",
+    "en": "Text must be in kebab-case format"
+  },
+  "60": {
+    "ar": "يجب أن يكون النص بتنسيق snake case",
+    "en": "Text must be in snake case format"
+  },
+  "61": {
+    "ar": "تنسيق التسمية غير مدعوم",
+    "en": "Unsupported naming convention"
+  },
+  "62": {
+    "ar": "يرجى إدخال رقم ضمان اجتماعي صحيح (مثال: 123-45-6789)",
+    "en": "Please enter a valid SSN (e.g., 123-45-6789)"
+  },
+  "63": {
+    "ar": "يرجى إدخال اسم نطاق صحيح",
+    "en": "Please enter a valid domain name"
+  },
+  "64": {
+    "ar": "يرجى إدخال نص base64 صحيح",
+    "en": "Please enter a valid base64 string"
+  },
+  "65": {
+    "ar": "يرجى إدخال نوع MIME صحيح",
+    "en": "Please enter a valid MIME type"
+  },
+
+  "66": {
+    "ar": "موافق",
+    "en": "ok"
+  },
+
+  "67": {
+    "ar": "يجب أن يكون بين {{min}} و {{max}} حرف",
+    "en": "Must be {{min}} - {{max}} characters"
+  },
+  "68": {
+    "ar": "حروف فقط مسموحة",
+    "en": "Letters only"
+  },
+  "69": {
+    "ar": "مثال: أحمد علي",
+    "en": "Format: John Doe"
+  },
+  "70": {
+    "ar": "عذراً!",
+    "en": "Oops!"
+  },
+  "71": {
+    "ar": "حاول مرة أخرى",
+    "en": "Try Again"
+  },
+
+  "72": {
+    "ar": "إلغاء",
+    "en": "Cancel"
+  },
+
+  "73": {
+    "ar": "حذف",
+    "en": "Delete"
+  },
+  "74": {
+    "ar": "الوضع",
+    "en": "Mode"
+  },
+
+  "75": {
+    "ar": "الإعدادات",
+    "en": "Settings"
+  },
+
+  "76": {
+    "ar": "التقاط لقطة شاشة",
+    "en": "Take Screenshot"
+  },
+  "77": {
+    "ar": "المسار: التنزيلات/اسم التطبيق/لقطات الشاشة",
+    "en": "Path: Download/${AppSettings.appName}/Screenshots"
+  },
+  "78": {
+    "ar": "لقطات الشاشة",
+    "en": "Screenshots"
+  },
+  "79": {
+    "ar": "لا توجد عناصر بعد",
+    "en": "No items yet"
+  },
+  "80": {
+    "ar": "العناصر التي تضيفها ستظهر هنا",
+    "en": "Items you add will appear here"
+  },
+
+  "81": {
+    "ar": "خيارات أكثر",
+    "en": "More options"
+  },
+  "82": {
+    "ar": "الافتراضي للنظام",
+    "en": "System Default"
+  },
+
+  "83": {
+    "ar": "فقدان التقدم؟",
+    "en": "Lose Progress?"
+  },
+  "84": {
+    "ar": "الرجوع سيؤدي إلى فقدان التقدم الحالي. هل تريد المتابعة؟",
+    "en": "Going back will lose your current progress. Continue?"
+  },
+
+  "85": {
+    "ar": "العودة",
+    "en": "Go Back"
+  },
+
+  "86": {
+    "ar": "فاتح",
+    "en": "Light"
+  },
+  "87": {
+    "ar": "داكن",
+    "en": "Dark"
+  },
+
+  "authLoginTitle": {
+    "ar": "تسجيل الدخول",
+    "en": "Sign In"
+  },
+  "authLoginSubtitle": {
+    "ar": "أدخل بيانات الاعتماد الخاصة بك للمتابعة",
+    "en": "Enter your credentials to continue"
+  },
+  "authUsernameLabel": {
+    "ar": "اسم المستخدم",
+    "en": "Username"
+  },
+  "authUsernameHint": {
+    "ar": "أدخل اسم المستخدم",
+    "en": "Enter your username"
+  },
+  "authPasswordLabel": {
+    "ar": "كلمة المرور",
+    "en": "Password"
+  },
+  "authPasswordHint": {
+    "ar": "أدخل كلمة المرور",
+    "en": "Enter your password"
+  },
+  "authLoginButton": {
+    "ar": "تسجيل الدخول",
+    "en": "Sign In"
+  },
+  "authLoginSuccess": {
+    "ar": "تم تسجيل الدخول",
+    "en": "Login Successful"
+  },
+  "authLoginSuccessMessage": {
+    "ar": "لقد تم تسجيل دخولك بنجاح.",
+    "en": "You have successfully signed in."
+  },
+
+  "productsTitle": {
+    "ar": "المنتجات",
+    "en": "Products"
+  },
+  "productsAddToCart": {
+    "ar": "أضف إلى السلة",
+    "en": "Add to Cart"
+  },
+  "productsCategoryLabel": {
+    "ar": "الفئة",
+    "en": "Category"
+  },
+  "productsNoItemsTitle": {
+    "ar": "لا توجد منتجات متاحة",
+    "en": "No Products Available"
+  },
+  "productsNoItemsSubtitle": {
+    "ar": "تحقق لاحقاً من الوصولات الجديدة",
+    "en": "Check back later for new arrivals"
+  }
+}
