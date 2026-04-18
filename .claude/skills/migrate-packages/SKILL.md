@@ -1,6 +1,6 @@
 ---
 name: migrate-packages
-description: Read pubspec.yaml and print flutter pub add commands for all packages
+description: Read pubspec.yaml and print flutter pub add commands for all packages.
 disable-model-invocation: true
 ---
 
