@@ -1,9 +1,9 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_genesis/core/routing/navigation_service.dart';
-import 'package:flutter_genesis/core/routing/notification_navigator.dart';
-import 'package:flutter_genesis/core/themes/app_theme_manager.dart';
+import 'package:flutter_starter/core/routing/navigation_service.dart';
+import 'package:flutter_starter/core/routing/notification_navigator.dart';
+import 'package:flutter_starter/core/themes/app_theme_manager.dart';
 
 import '../../../../app/cubit/app_cubit.dart';
 import '../../../constants/app_settings.dart';

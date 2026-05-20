@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_genesis/core/constants/app_colors.dart';
-import 'package:flutter_genesis/core/extensions/build_context_extensions.dart';
-import 'package:flutter_genesis/core/routing/app_route.dart';
-import 'package:flutter_genesis/core/routing/navigation_service.dart';
+import 'package:flutter_starter/core/constants/app_colors.dart';
+import 'package:flutter_starter/core/extensions/build_context_extensions.dart';
+import 'package:flutter_starter/core/routing/app_route.dart';
+import 'package:flutter_starter/core/routing/navigation_service.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

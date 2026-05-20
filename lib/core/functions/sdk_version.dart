@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import '../utils/app_logger.dart';
 
 abstract final class SdkVersion {
-  static const _channel = MethodChannel('flutter_genesis/device_info');
+  static const _channel = MethodChannel('flutter_starter/device_info');
 
   /// Returns the Android SDK version (e.g. 33 for Android 13).
   /// Returns -1 on non-Android platforms or on error.

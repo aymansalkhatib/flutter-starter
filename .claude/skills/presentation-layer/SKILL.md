@@ -1,6 +1,6 @@
 ---
 name: presentation-layer
-description: Rules for the presentation layer in flutter_genesis — Cubit with safeEmit, Freezed state with Failure (never String), BlocConsumer split between Page (Scaffold + CustomAppBar + BlocProvider) and body widget (content + listener/builder), TextEditingController ownership in the Cubit. Use when creating or editing any file under lib/features/*/presentation/.
+description: Rules for the presentation layer in flutter_starter — Cubit with safeEmit, Freezed state with Failure (never String), BlocConsumer split between Page (Scaffold + CustomAppBar + BlocProvider) and body widget (content + listener/builder), TextEditingController ownership in the Cubit. Use when creating or editing any file under lib/features/*/presentation/.
 ---
 
 # Presentation layer

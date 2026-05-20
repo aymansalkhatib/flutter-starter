@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:flutter_genesis/generated/locale_keys.dart';
+import 'package:flutter_starter/generated/locale_keys.dart';
 
 import 'failure.dart';
 

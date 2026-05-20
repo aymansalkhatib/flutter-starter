@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_genesis/core/extensions/safe_emit_extension.dart';
+import 'package:flutter_starter/core/extensions/safe_emit_extension.dart';
 
 import '../../domain/usecases/login_usecase.dart';
 import 'authentication_state.dart';

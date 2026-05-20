@@ -1,5 +1,5 @@
-import 'package:flutter_genesis/core/constants/hive/hive_box_names.dart';
-import 'package:flutter_genesis/core/storage/hive/hive_storage_service.dart';
+import 'package:flutter_starter/core/constants/hive/hive_box_names.dart';
+import 'package:flutter_starter/core/storage/hive/hive_storage_service.dart';
 
 import '../../domain/entities/product_entity.dart';
 

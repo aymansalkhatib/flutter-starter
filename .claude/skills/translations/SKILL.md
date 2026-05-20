@@ -1,6 +1,6 @@
 ---
 name: translations
-description: Rules for internationalization in flutter_genesis — never hardcode user-facing strings, use LocaleKeys.x.tr(context) with optional args for placeholders, add new keys to assets/translations/translations.json (numbered for shared, named for feature-specific), run the codegen helper, and never edit generated locale files. Covers pluralization via _zero/_one/_two/_few/_many/_other suffixes. Use when adding any user-visible text, validation messages, snackbar content, or dialog content.
+description: Rules for internationalization in flutter_starter — never hardcode user-facing strings, use LocaleKeys.x.tr(context) with optional args for placeholders, add new keys to assets/translations/translations.json (numbered for shared, named for feature-specific), run the codegen helper, and never edit generated locale files. Covers pluralization via _zero/_one/_two/_few/_many/_other suffixes. Use when adding any user-visible text, validation messages, snackbar content, or dialog content.
 ---
 
 # Translations

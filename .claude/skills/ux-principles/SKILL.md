@@ -1,6 +1,6 @@
 ---
 name: ux-principles
-description: UX / UI design principles and quality gates for flutter_genesis — hierarchy (one hero per screen), 8pt spacing grid, 60 / 30 / 10 color rule, typography rules, iconography, motion timing, the five required states (empty / loading / loaded / error / stale), form conventions, accessibility requirements (contrast, tap targets, semantics), and RTL / dark-mode correctness. Use when designing any screen or component, reviewing a layout, or deciding spacing / colors / motion values.
+description: UX / UI design principles and quality gates for flutter_starter — hierarchy (one hero per screen), 8pt spacing grid, 60 / 30 / 10 color rule, typography rules, iconography, motion timing, the five required states (empty / loading / loaded / error / stale), form conventions, accessibility requirements (contrast, tap targets, semantics), and RTL / dark-mode correctness. Use when designing any screen or component, reviewing a layout, or deciding spacing / colors / motion values.
 ---
 
 # UX / UI principles

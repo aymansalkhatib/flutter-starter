@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_genesis/app/cubit/app_cubit.dart';
-import 'package:flutter_genesis/core/di/service_locator.dart';
-import 'package:flutter_genesis/core/network/api_client.dart';
+import 'package:flutter_starter/app/cubit/app_cubit.dart';
+import 'package:flutter_starter/core/di/service_locator.dart';
+import 'package:flutter_starter/core/network/api_client.dart';
 
 /// Registers core services like networking and navigation.
 void registerCoreDependencies() {

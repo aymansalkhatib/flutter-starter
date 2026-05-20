@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_genesis/generated/fonts.dart';
+import 'package:flutter_starter/generated/fonts.dart';
 
 import '../constants/app_colors.dart';
 import '../localization/translation_manager.dart';

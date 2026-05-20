@@ -1,11 +1,11 @@
-package com.example.flutter_genesis
+package com.example.flutter_starter
 
 import android.os.Build
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 
 object SdkVersionChannel {
-    private const val CHANNEL = "flutter_genesis/device_info"
+    private const val CHANNEL = "flutter_starter/device_info"
 
     fun register(flutterEngine: FlutterEngine) {
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL)

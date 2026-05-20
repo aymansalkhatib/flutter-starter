@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_genesis/generated/locale_keys.dart';
+import 'package:flutter_starter/generated/locale_keys.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 
 import '../../extensions/index.dart';

@@ -1,6 +1,6 @@
 ---
 name: validation
-description: Rules for form validation in flutter_genesis — always use pre-translated Validator.* methods (validateEmail, validatePassword, validatePhone, validateRequired, validateLength, validateDate, etc.), and add new validation methods inside Validator rather than inlining regex. Use when adding or editing any TextFormField validator, or when validating external arguments from deep links / push payloads.
+description: Rules for form validation in flutter_starter — always use pre-translated Validator.* methods (validateEmail, validatePassword, validatePhone, validateRequired, validateLength, validateDate, etc.), and add new validation methods inside Validator rather than inlining regex. Use when adding or editing any TextFormField validator, or when validating external arguments from deep links / push payloads.
 ---
 
 # Form validation

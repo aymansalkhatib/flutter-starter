@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_genesis/features/authentication/presentation/pages/authentication_page.dart';
-import 'package:flutter_genesis/features/products/presentation/pages/products_page.dart';
-import 'package:flutter_genesis/features/splash/screens/splash_screen.dart';
-import 'package:flutter_genesis/generated/locale_keys.dart';
+import 'package:flutter_starter/features/authentication/presentation/pages/authentication_page.dart';
+import 'package:flutter_starter/features/products/presentation/pages/products_page.dart';
+import 'package:flutter_starter/features/splash/screens/splash_screen.dart';
+import 'package:flutter_starter/generated/locale_keys.dart';
 
 import 'app_route.dart';
 import 'page_route_animator.dart';

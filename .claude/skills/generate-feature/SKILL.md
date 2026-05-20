@@ -1,6 +1,6 @@
 ---
 name: generate-feature
-description: Orchestrator for scaffolding a new Flutter Clean Architecture feature end-to-end in flutter_genesis — enforces mode selection (quick / detailed), the intake ritual, the strict generation order across layers, and the feature-delivery checklist. Supports two modes — quick (5 basic questions) and detailed (expanded API contracts with exact request / response shapes). Delegates detailed rules to the per-layer skills (architecture / domain-layer / data-layer / presentation-layer / hive-caching / security / di-registration / navigation / translations). Use when the user asks to create a new feature with domain, data, and presentation layers.
+description: Orchestrator for scaffolding a new Flutter Clean Architecture feature end-to-end in flutter_starter — enforces mode selection (quick / detailed), the intake ritual, the strict generation order across layers, and the feature-delivery checklist. Supports two modes — quick (5 basic questions) and detailed (expanded API contracts with exact request / response shapes). Delegates detailed rules to the per-layer skills (architecture / domain-layer / data-layer / presentation-layer / hive-caching / security / di-registration / navigation / translations). Use when the user asks to create a new feature with domain, data, and presentation layers.
 ---
 
 # Generate feature — orchestrator

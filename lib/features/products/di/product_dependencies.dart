@@ -1,5 +1,5 @@
-import 'package:flutter_genesis/core/di/service_locator.dart';
-import 'package:flutter_genesis/core/network/api_client.dart';
+import 'package:flutter_starter/core/di/service_locator.dart';
+import 'package:flutter_starter/core/network/api_client.dart';
 
 import '../data/datasources/product_local_data_source.dart';
 import '../data/datasources/product_remote_data_source.dart';

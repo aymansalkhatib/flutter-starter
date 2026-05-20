@@ -1,6 +1,6 @@
 ---
 name: di-registration
-description: Rules for dependency injection with GetIt (sl) in flutter_genesis — every feature owns a di/<feature>_dependencies.dart registered in service_locator.dart, with registration order DataSources → Repository → UseCases → Cubit, and lazy-singleton vs factory guidance. Use when creating a new feature's DI file, editing service_locator.dart, or deciding how to register a service.
+description: Rules for dependency injection with GetIt (sl) in flutter_starter — every feature owns a di/<feature>_dependencies.dart registered in service_locator.dart, with registration order DataSources → Repository → UseCases → Cubit, and lazy-singleton vs factory guidance. Use when creating a new feature's DI file, editing service_locator.dart, or deciding how to register a service.
 ---
 
 # DI registration

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_genesis/core/extensions/build_context_extensions.dart';
-import 'package:flutter_genesis/core/extensions/responsive_font_size_extension.dart';
-import 'package:flutter_genesis/core/ui/components/custom_cached_network_image.dart';
+import 'package:flutter_starter/core/extensions/build_context_extensions.dart';
+import 'package:flutter_starter/core/extensions/responsive_font_size_extension.dart';
+import 'package:flutter_starter/core/ui/components/custom_cached_network_image.dart';
 
 import '../../domain/entities/product_entity.dart';
 

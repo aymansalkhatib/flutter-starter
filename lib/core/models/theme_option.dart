@@ -1,6 +1,6 @@
 // core/models/theme_option.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_genesis/generated/locale_keys.dart';
+import 'package:flutter_starter/generated/locale_keys.dart';
 
 class ThemeOption {
   final String label;

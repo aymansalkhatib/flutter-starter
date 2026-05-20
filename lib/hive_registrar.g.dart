@@ -3,7 +3,7 @@
 // Check in to version control
 
 import 'package:hive_ce/hive_ce.dart';
-import 'package:flutter_genesis/features/products/domain/entities/product_entity.dart';
+import 'package:flutter_starter/features/products/domain/entities/product_entity.dart';
 
 extension HiveRegistrar on HiveInterface {
   void registerAdapters() {

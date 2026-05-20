@@ -1,6 +1,6 @@
 ---
 name: ui-components
-description: Catalog of reusable UI components, snackbars, and dialogs in flutter_genesis — CustomButton, CustomTextFormField, CustomAppBar, CustomCachedNetworkImage, OTPInputField, AnimatedDotsLoader, FailureWidget, EmptyWidget, ConfirmBackScope, DoubleBackToExit, MenuAction, RoundedLoadingButton, plus scaffold / overlay snackbars and warning dialog helpers. Use before writing any new widget — check the catalog first. Also covers core utilities (DateFormatter, NumberFormatter, Debouncer, PaginationController, image/file pickers, NetworkMonitor).
+description: Catalog of reusable UI components, snackbars, and dialogs in flutter_starter — CustomButton, CustomTextFormField, CustomAppBar, CustomCachedNetworkImage, OTPInputField, AnimatedDotsLoader, FailureWidget, EmptyWidget, ConfirmBackScope, DoubleBackToExit, MenuAction, RoundedLoadingButton, plus scaffold / overlay snackbars and warning dialog helpers. Use before writing any new widget — check the catalog first. Also covers core utilities (DateFormatter, NumberFormatter, Debouncer, PaginationController, image/file pickers, NetworkMonitor).
 ---
 
 # UI components & utilities catalog

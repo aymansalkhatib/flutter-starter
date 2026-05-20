@@ -1,5 +1,5 @@
-import 'package:flutter_genesis/core/constants/hive/storage_keys.dart';
-import 'package:flutter_genesis/core/storage/hive/hive_boxes.dart';
+import 'package:flutter_starter/core/constants/hive/storage_keys.dart';
+import 'package:flutter_starter/core/storage/hive/hive_boxes.dart';
 
 abstract class AuthenticationLocalDataSource {
   String? getToken();

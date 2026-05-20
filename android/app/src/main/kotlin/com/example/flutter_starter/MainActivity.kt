@@ -1,4 +1,4 @@
-package com.example.flutter_genesis
+package com.example.flutter_starter
 
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine

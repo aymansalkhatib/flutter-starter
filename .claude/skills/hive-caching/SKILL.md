@@ -1,6 +1,6 @@
 ---
 name: hive-caching
-description: Rules for local caching with Hive in flutter_genesis — box naming, key strategy, Entity annotation with @HiveType / @HiveField, LocalDataSource pattern, schema migration constraints (typeId/index immutability), and cache invalidation triggers (logout, version change). Use when adding caching to a feature, modifying a LocalDataSource, or editing an entity with @HiveField annotations.
+description: Rules for local caching with Hive in flutter_starter — box naming, key strategy, Entity annotation with @HiveType / @HiveField, LocalDataSource pattern, schema migration constraints (typeId/index immutability), and cache invalidation triggers (logout, version change). Use when adding caching to a feature, modifying a LocalDataSource, or editing an entity with @HiveField annotations.
 ---
 
 # Hive caching

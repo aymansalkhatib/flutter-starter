@@ -1,6 +1,6 @@
 ---
 name: navigation
-description: Rules for navigation in flutter_genesis — typed route argument classes (no raw Maps), the three-edit rule (AppRoute enum + generateRoute switch + _guardsFor switch), NavigationService API, route guards (AuthGuard / GuestGuard / custom), PageRouteAnimator transitions, and returnOrFallback after guard redirects. Use when adding or modifying any route, writing navigation calls, or creating route guards.
+description: Rules for navigation in flutter_starter — typed route argument classes (no raw Maps), the three-edit rule (AppRoute enum + generateRoute switch + _guardsFor switch), NavigationService API, route guards (AuthGuard / GuestGuard / custom), PageRouteAnimator transitions, and returnOrFallback after guard redirects. Use when adding or modifying any route, writing navigation calls, or creating route guards.
 ---
 
 # Navigation

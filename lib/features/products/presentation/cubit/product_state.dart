@@ -1,4 +1,4 @@
-import 'package:flutter_genesis/core/errors/failure.dart';
+import 'package:flutter_starter/core/errors/failure.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../../domain/entities/product_entity.dart';

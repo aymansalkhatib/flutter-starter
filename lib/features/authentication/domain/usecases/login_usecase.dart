@@ -1,6 +1,6 @@
-import 'package:flutter_genesis/core/errors/failure.dart';
-import 'package:flutter_genesis/core/shared/either.dart';
-import 'package:flutter_genesis/core/shared/usecase.dart';
+import 'package:flutter_starter/core/errors/failure.dart';
+import 'package:flutter_starter/core/shared/either.dart';
+import 'package:flutter_starter/core/shared/usecase.dart';
 
 import '../entities/authentication_entity.dart';
 import '../repositories/authentication_repository.dart';

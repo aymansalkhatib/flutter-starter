@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_genesis/core/constants/hive/storage_keys.dart';
-import 'package:flutter_genesis/core/extensions/index.dart';
+import 'package:flutter_starter/core/constants/hive/storage_keys.dart';
+import 'package:flutter_starter/core/extensions/index.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../../core/localization/translation_manager.dart';

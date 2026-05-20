@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_genesis/core/errors/failure.dart';
-import 'package:flutter_genesis/core/errors/server_failure.dart';
-import 'package:flutter_genesis/core/errors/storage_exception.dart';
-import 'package:flutter_genesis/core/shared/either.dart';
-import 'package:flutter_genesis/core/utils/app_logger.dart';
-import 'package:flutter_genesis/generated/locale_keys.dart';
+import 'package:flutter_starter/core/errors/failure.dart';
+import 'package:flutter_starter/core/errors/server_failure.dart';
+import 'package:flutter_starter/core/errors/storage_exception.dart';
+import 'package:flutter_starter/core/shared/either.dart';
+import 'package:flutter_starter/core/utils/app_logger.dart';
+import 'package:flutter_starter/generated/locale_keys.dart';
 
 import '../../domain/entities/authentication_entity.dart';
 import '../../domain/repositories/authentication_repository.dart';

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_genesis/core/routing/navigation_service.dart';
-import 'package:flutter_genesis/core/routing/notification_navigator.dart';
-import 'package:flutter_genesis/core/themes/app_theme_manager.dart';
+import 'package:flutter_starter/core/routing/navigation_service.dart';
+import 'package:flutter_starter/core/routing/notification_navigator.dart';
+import 'package:flutter_starter/core/themes/app_theme_manager.dart';
 
 import '../core/constants/app_settings.dart';
 import '../core/di/service_locator.dart';

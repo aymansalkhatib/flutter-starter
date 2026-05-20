@@ -1,6 +1,6 @@
 ---
 name: security
-description: Non-negotiable security rules for flutter_genesis — encrypted Hive box for tokens/PII, required Dio timeouts, certificate pinning stance, logging prohibitions (no tokens / no PII / no full response bodies), user input sanitization, deep-link argument validation, and FCM / GoogleAuth service lifecycles. Use whenever handling tokens, credentials, PII, external inputs, user-generated content, or push notification / social sign-in logic. Security rules override architecture and style rules on conflict.
+description: Non-negotiable security rules for flutter_starter — encrypted Hive box for tokens/PII, required Dio timeouts, certificate pinning stance, logging prohibitions (no tokens / no PII / no full response bodies), user input sanitization, deep-link argument validation, and FCM / GoogleAuth service lifecycles. Use whenever handling tokens, credentials, PII, external inputs, user-generated content, or push notification / social sign-in logic. Security rules override architecture and style rules on conflict.
 ---
 
 # Security

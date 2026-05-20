@@ -1,6 +1,6 @@
 ---
 name: data-layer
-description: Rules for the data layer in flutter_genesis — RemoteDataSource using ApiClient, RepositoryImpl as the Either boundary with exception-to-Failure mapping, cache-first read patterns, Dio timeouts, and the Failure error-code ranges. Use when creating or editing any file under lib/features/*/data/, or when mapping exceptions to Failure.
+description: Rules for the data layer in flutter_starter — RemoteDataSource using ApiClient, RepositoryImpl as the Either boundary with exception-to-Failure mapping, cache-first read patterns, Dio timeouts, and the Failure error-code ranges. Use when creating or editing any file under lib/features/*/data/, or when mapping exceptions to Failure.
 ---
 
 # Data layer

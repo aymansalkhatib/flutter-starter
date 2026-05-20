@@ -1,6 +1,6 @@
 ---
 name: domain-layer
-description: Rules for the domain layer in flutter_genesis — Freezed entities with self-owned fromJson, UseCase + Params pattern, and abstract Repository contracts. Use when creating or editing any file under lib/features/*/domain/, or deciding whether a feature needs a separate Model class beyond its Entity.
+description: Rules for the domain layer in flutter_starter — Freezed entities with self-owned fromJson, UseCase + Params pattern, and abstract Repository contracts. Use when creating or editing any file under lib/features/*/domain/, or deciding whether a feature needs a separate Model class beyond its Entity.
 ---
 
 # Domain layer

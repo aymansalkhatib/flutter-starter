@@ -1,5 +1,5 @@
-import 'package:flutter_genesis/core/errors/failure.dart';
-import 'package:flutter_genesis/core/shared/either.dart';
+import 'package:flutter_starter/core/errors/failure.dart';
+import 'package:flutter_starter/core/shared/either.dart';
 
 import '../entities/product_entity.dart';
 

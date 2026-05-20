@@ -1,6 +1,6 @@
 ---
 name: code-style
-description: Code style rules and anti-patterns for flutter_genesis — comment discipline (write only for non-obvious why), SOLID principles, no speculative abstractions, and a concrete anti-patterns table covering dartz vs custom Either, datasource-returns-Either, e.toString() in Failure, emit vs safeEmit, state.navigateToX, Navigator.of(context).push* directly, raw-map route args, hardcoded Colors.white / TextStyle / EdgeInsets, print / AppLogger.debug, @freezed class (non-abstract), TextEditingController in StatefulWidget, AppBar in body widget, setState inside BlocConsumer. Use before finalizing any Dart file in this project.
+description: Code style rules and anti-patterns for flutter_starter — comment discipline (write only for non-obvious why), SOLID principles, no speculative abstractions, and a concrete anti-patterns table covering dartz vs custom Either, datasource-returns-Either, e.toString() in Failure, emit vs safeEmit, state.navigateToX, Navigator.of(context).push* directly, raw-map route args, hardcoded Colors.white / TextStyle / EdgeInsets, print / AppLogger.debug, @freezed class (non-abstract), TextEditingController in StatefulWidget, AppBar in body widget, setState inside BlocConsumer. Use before finalizing any Dart file in this project.
 ---
 
 # Code style

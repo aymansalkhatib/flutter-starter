@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_genesis/core/extensions/safe_emit_extension.dart';
-import 'package:flutter_genesis/core/shared/usecase.dart';
+import 'package:flutter_starter/core/extensions/safe_emit_extension.dart';
+import 'package:flutter_starter/core/shared/usecase.dart';
 
 import '../../domain/usecases/get_products_usecase.dart';
 import 'product_state.dart';

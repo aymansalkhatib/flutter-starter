@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_genesis/core/extensions/edge_insets_extension.dart';
-import 'package:flutter_genesis/core/ui/components/animated_dots_loader.dart';
-import 'package:flutter_genesis/core/ui/components/empty_widget.dart';
-import 'package:flutter_genesis/core/ui/components/failure_widget.dart';
-import 'package:flutter_genesis/core/ui/snackbar/overlay_snackbar.dart';
-import 'package:flutter_genesis/core/ui/snackbar/scaffold_snackbar.dart';
-import 'package:flutter_genesis/generated/locale_keys.dart';
+import 'package:flutter_starter/core/extensions/edge_insets_extension.dart';
+import 'package:flutter_starter/core/ui/components/animated_dots_loader.dart';
+import 'package:flutter_starter/core/ui/components/empty_widget.dart';
+import 'package:flutter_starter/core/ui/components/failure_widget.dart';
+import 'package:flutter_starter/core/ui/snackbar/overlay_snackbar.dart';
+import 'package:flutter_starter/core/ui/snackbar/scaffold_snackbar.dart';
+import 'package:flutter_starter/generated/locale_keys.dart';
 
 import '../cubit/product_cubit.dart';
 import '../cubit/product_state.dart';

@@ -1,6 +1,6 @@
 ---
 name: theming
-description: Rules for styling and layout in flutter_genesis — consume colors / typography / device info through BuildContext extensions (context.colors, context.styles, context.screenWidth, etc.), size fonts with .sp(context), build paddings with num extensions (16.horizontal, 24.all), clamp OS text scale once at MaterialApp.builder, and use AppThemeManager for runtime theme switching. Use when styling any UI element — never hardcode colors, font sizes, or EdgeInsets left/right.
+description: Rules for styling and layout in flutter_starter — consume colors / typography / device info through BuildContext extensions (context.colors, context.styles, context.screenWidth, etc.), size fonts with .sp(context), build paddings with num extensions (16.horizontal, 24.all), clamp OS text scale once at MaterialApp.builder, and use AppThemeManager for runtime theme switching. Use when styling any UI element — never hardcode colors, font sizes, or EdgeInsets left/right.
 ---
 
 # Theming & layout

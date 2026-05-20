@@ -1,5 +1,5 @@
-import 'package:flutter_genesis/core/constants/api_endpoints.dart';
-import 'package:flutter_genesis/core/network/api_client.dart';
+import 'package:flutter_starter/core/constants/api_endpoints.dart';
+import 'package:flutter_starter/core/network/api_client.dart';
 
 import '../../domain/entities/product_entity.dart';
 

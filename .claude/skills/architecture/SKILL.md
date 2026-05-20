@@ -1,6 +1,6 @@
 ---
 name: architecture
-description: Clean Architecture layer rules, feature folder structure, import direction, and no-backend feature scaffolding for flutter_genesis. Use when deciding where a new file belongs, reviewing dependency direction between domain/data/presentation, structuring a feature folder, or building a presentation-only feature (splash, onboarding, info).
+description: Clean Architecture layer rules, feature folder structure, import direction, and no-backend feature scaffolding for flutter_starter. Use when deciding where a new file belongs, reviewing dependency direction between domain/data/presentation, structuring a feature folder, or building a presentation-only feature (splash, onboarding, info).
 ---
 
 # Architecture
