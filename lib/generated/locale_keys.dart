@@ -204,4 +204,8 @@ abstract class LocaleKeys {
 
   static const String productsNoItemsSubtitle = 'productsNoItemsSubtitle';
 
+  static const String splashAppName = 'splashAppName';
+
+  static const String splashTagline = 'splashTagline';
+
 }

@@ -414,5 +414,14 @@
   "productsNoItemsSubtitle": {
     "ar": "تحقق لاحقاً من الوصولات الجديدة",
     "en": "Check back later for new arrivals"
+  },
+
+  "splashAppName": {
+    "ar": "فلاتر ستارتر",
+    "en": "Flutter Starter"
+  },
+  "splashTagline": {
+    "ar": "أساس نظيف لتطبيقك القادم",
+    "en": "A clean foundation for your next app"
   }
 }

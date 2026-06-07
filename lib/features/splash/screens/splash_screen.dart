@@ -1,9 +1,13 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_starter/core/constants/app_colors.dart';
 import 'package:flutter_starter/core/extensions/build_context_extensions.dart';
+import 'package:flutter_starter/core/extensions/edge_insets_extension.dart';
 import 'package:flutter_starter/core/routing/app_route.dart';
 import 'package:flutter_starter/core/routing/navigation_service.dart';
+import 'package:flutter_starter/generated/locale_keys.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,11 +17,12 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   late final AnimationController _controller;
-  late final Animation<double> _fade;
-  late final Animation<double> _scale;
-  late final Animation<double> _taglineFade;
+  late final Animation<double> _logoScale;
+  late final Animation<double> _logoFade;
+  late final Animation<double> _textFade;
+  late final Animation<Offset> _textSlide;
 
   @override
   void initState() {
@@ -29,25 +34,38 @@ class _SplashScreenState extends State<SplashScreen>
     ));
 
     _controller = AnimationController(
-      duration: const Duration(milliseconds: 900),
+      duration: const Duration(milliseconds: 1100),
       vsync: this,
     )..forward();
 
-    _scale = Tween<double>(begin: 0.55, end: 1.0).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.easeOutBack),
+    _logoScale = Tween<double>(begin: 0.7, end: 1.0).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: const Interval(0.0, 0.65, curve: Curves.easeOutBack),
+      ),
     );
 
-    _fade = CurvedAnimation(
+    _logoFade = CurvedAnimation(
       parent: _controller,
-      curve: const Interval(0.0, 0.7, curve: Curves.easeOut),
+      curve: const Interval(0.0, 0.5, curve: Curves.easeOut),
     );
 
-    _taglineFade = CurvedAnimation(
+    _textFade = CurvedAnimation(
       parent: _controller,
-      curve: const Interval(0.4, 1.0, curve: Curves.easeOut),
+      curve: const Interval(0.45, 1.0, curve: Curves.easeOut),
     );
 
-    Future.delayed(const Duration(milliseconds: 2500), () {
+    _textSlide = Tween<Offset>(
+      begin: const Offset(0, 0.4),
+      end: Offset.zero,
+    ).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: const Interval(0.45, 1.0, curve: Curves.easeOutCubic),
+      ),
+    );
+
+    Future.delayed(const Duration(milliseconds: 2400), () {
       if (mounted) {
         NavigationService.replace<void>(AppRoute.productsScreen);
       }
@@ -62,111 +80,70 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   Widget build(BuildContext context) {
-    final primary = context.colors.primary;
-    final secondary = context.colors.secondary;
+    final colors = context.colors;
 
     return Scaffold(
-      body: DecoratedBox(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [primary, secondary, primary.withValues(alpha: 0.85)],
-            stops: const [0.0, 0.55, 1.0],
+      body: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle.light,
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [colors.primary, colors.secondary],
+            ),
           ),
-        ),
-        child: SafeArea(
-          child: SizedBox.expand(
-            child: Column(
+          child: SafeArea(
+            child: Stack(
               children: [
-                const Spacer(flex: 3),
-
-                // ── Logo + name ────────────────────────────────────────
-                FadeTransition(
-                  opacity: _fade,
-                  child: ScaleTransition(
-                    scale: _scale,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        // Icon ring
-                        SizedBox(
-                          width: 100,
-                          height: 100,
-                          child: DecoratedBox(
-                            decoration: BoxDecoration(
-                              color: AppColors.white.withValues(alpha: 0.15),
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                color: AppColors.white.withValues(alpha: 0.35),
-                                width: 1.5,
-                              ),
-                              boxShadow: [
-                                BoxShadow(
-                                  color:
-                                      AppColors.black.withValues(alpha: 0.15),
-                                  blurRadius: 24,
-                                  offset: const Offset(0, 8),
+                Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      FadeTransition(
+                        opacity: _logoFade,
+                        child: ScaleTransition(
+                          scale: _logoScale,
+                          child: const _LogoBadge(),
+                        ),
+                      ),
+                      const SizedBox(height: 28),
+                      FadeTransition(
+                        opacity: _textFade,
+                        child: SlideTransition(
+                          position: _textSlide,
+                          child: Column(
+                            children: [
+                              Text(
+                                LocaleKeys.splashAppName.tr(context),
+                                style: context.styles.semiBold24.copyWith(
+                                  color: AppColors.white,
+                                  letterSpacing: 2,
                                 ),
-                              ],
-                            ),
-                            child: const Icon(
-                              Icons.storefront_outlined,
-                              size: 46,
-                              color: AppColors.white,
-                            ),
+                              ),
+                              const SizedBox(height: 8),
+                              Text(
+                                LocaleKeys.splashTagline.tr(context),
+                                textAlign: TextAlign.center,
+                                style: context.styles.regular14.copyWith(
+                                  color: AppColors.white.withValues(alpha: 0.8),
+                                  letterSpacing: 0.3,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-
-                        const SizedBox(height: 28),
-
-                        // App name
-                        const Text(
-                          'SHOP GENESIS',
-                          style: TextStyle(
-                            fontSize: 26,
-                            fontWeight: FontWeight.w800,
-                            color: AppColors.white,
-                            letterSpacing: 4,
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
-
-                const SizedBox(height: 12),
-
-                // Tagline fades in slightly later
-                FadeTransition(
-                  opacity: _taglineFade,
-                  child: Text(
-                    'Discover  ·  Shop  ·  Enjoy',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: AppColors.white.withValues(alpha: 0.7),
-                      letterSpacing: 2,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                ),
-
-                const Spacer(flex: 3),
-
-                // ── Pulsing dots ───────────────────────────────────────
-                FadeTransition(
-                  opacity: _fade,
-                  child: const Padding(
-                    padding: EdgeInsets.only(bottom: 52),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        _PulseDot(delay: Duration.zero),
-                        SizedBox(width: 8),
-                        _PulseDot(delay: Duration(milliseconds: 180)),
-                        SizedBox(width: 8),
-                        _PulseDot(delay: Duration(milliseconds: 360)),
-                      ],
+                Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Padding(
+                    padding: 48.bottom,
+                    child: FadeTransition(
+                      opacity: _textFade,
+                      child: const _PulsingDots(),
                     ),
                   ),
                 ),
@@ -179,60 +156,87 @@ class _SplashScreenState extends State<SplashScreen>
   }
 }
 
-// ── Pulsing dot ───────────────────────────────────────────────────────────────
-
-class _PulseDot extends StatefulWidget {
-  const _PulseDot({required this.delay});
-
-  final Duration delay;
+/// Rounded brand badge holding the app glyph, with a soft glow.
+class _LogoBadge extends StatelessWidget {
+  const _LogoBadge();
 
   @override
-  State<_PulseDot> createState() => _PulseDotState();
+  Widget build(BuildContext context) {
+    return Container(
+      padding: 26.all,
+      decoration: BoxDecoration(
+        color: AppColors.white.withValues(alpha: 0.14),
+        borderRadius: BorderRadius.circular(32),
+        border: Border.all(
+          color: AppColors.white.withValues(alpha: 0.25),
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.black.withValues(alpha: 0.2),
+            blurRadius: 24,
+            offset: const Offset(0, 12),
+          ),
+        ],
+      ),
+      child: const Icon(
+        Icons.flutter_dash_rounded,
+        size: 64,
+        color: AppColors.white,
+      ),
+    );
+  }
 }
 
-class _PulseDotState extends State<_PulseDot>
+/// Three softly pulsing dots used as a lightweight progress hint.
+class _PulsingDots extends StatefulWidget {
+  const _PulsingDots();
+
+  @override
+  State<_PulsingDots> createState() => _PulsingDotsState();
+}
+
+class _PulsingDotsState extends State<_PulsingDots>
     with SingleTickerProviderStateMixin {
-  late final AnimationController _ctrl;
-  late final Animation<double> _anim;
+  late final AnimationController _controller;
+
+  static const int _dotCount = 3;
 
   @override
   void initState() {
     super.initState();
-    _ctrl = AnimationController(
-      duration: const Duration(milliseconds: 700),
+    _controller = AnimationController(
+      duration: const Duration(milliseconds: 1100),
       vsync: this,
-    );
-
-    Future.delayed(widget.delay, () {
-      if (mounted) {
-        _ctrl.repeat(reverse: true);
-      }
-    });
-
-    _anim = Tween<double>(begin: 0.35, end: 1.0).animate(
-      CurvedAnimation(parent: _ctrl, curve: Curves.easeInOut),
-    );
+    )..repeat();
   }
 
   @override
   void dispose() {
-    _ctrl.dispose();
+    _controller.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    return FadeTransition(
-      opacity: _anim,
-      child: const SizedBox(
-        width: 7,
-        height: 7,
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            color: AppColors.white,
-            shape: BoxShape.circle,
-          ),
-        ),
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (_, __) => Row(
+        mainAxisSize: MainAxisSize.min,
+        children: List.generate(_dotCount, (index) {
+          final phase = (_controller.value + index / _dotCount) % 1.0;
+          final pulse = math.sin(phase * math.pi).clamp(0.0, 1.0);
+          return Padding(
+            padding: 4.horizontal,
+            child: Container(
+              width: 9,
+              height: 9,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: AppColors.white.withValues(alpha: 0.45 + pulse * 0.55),
+              ),
+            ),
+          );
+        }),
       ),
     );
   }

@@ -1,4 +1,4 @@
-# 🚀 Flutter Core Project Template
+# 🚀 Flutter Starter Template
 
 [![Made with Flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/)
 [![Clean Architecture](https://img.shields.io/badge/Clean-Architecture-1abc9c.svg)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
